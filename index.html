@@ -1,1 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech - Inovação no Campo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Menu Superior -->
+    <header>
+        <div class="logo">Agro<span>Tech</span></div>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#solucoes">Soluções</a>
+            <a href="#calculadora">Calculadora</a>
+        </nav>
+    </header>
+
+    <!-- Banner Principal -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>O Futuro da Agricultura Inteligente</h1>
+            <p>Conectamos tecnologia de ponta ao manejo sustentável para aumentar a produtividade da sua lavoura.</p>
+            <a href="#solucoes" class="btn">Saiba Mais</a>
+        </div>
+    </section>
+
+    <!-- Seção de Soluções -->
+    <section id="solucoes" class="services">
+        <h2>Nossas Soluções</h2>
+        <div class="grid-services">
+            <div class="card">
+                <h3>Monitoramento via Drone</h3>
+                <p>Análise em tempo real da saúde da plantação e identificação precoce de pragas.</p>
+            </div>
+            <div class="card">
+                <h3>Gestão de Solo</h3>
+                <p>Sensores inteligentes IoT que medem a umidade e os nutrientes da terra de forma contínua.</p>
+            </div>
+            <div class="card">
+                <h3>Previsão Climática</h3>
+                <p>Inteligência artificial cruzando dados para indicar o momento ideal de plantio e colheita.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Interativa (Calculadora) -->
+    <section id="calculadora" class="calc-section">
+        <div class="calc-container">
+            <h2>Simulador de Produtividade</h2>
+            <p>Descubra a estimativa de colheita baseada no tamanho da sua área plantada.</p>
+            
+            <div class="form-group">
+                <label for="hectares">Tamanho da área (em hectares):</label>
+                <input type="number" id="hectares" placeholder="Ex: 50" min="1">
+            </div>
+            
+            <div class="form-group">
+                <label for="cultura">Tipo de Cultura:</label>
+                <select id="cultura">
+                    <option value="soja">Soja</option>
+                    <option value="milho">Milho</option>
+                </select>
+            </div>
+
+            <button onclick="calcularSafra()">Calcular Estimativa</button>
+            <div id="resultado" class="result-box"></div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 AgroTech Soluções Agrícolas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
